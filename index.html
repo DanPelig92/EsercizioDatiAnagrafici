@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,35 +7,59 @@
     <link rel="stylesheet" href="style.css">
     <title>Dati Anagrafici</title>
 </head>
+
 <body>
     <h1>Esercizio Dati Anagrafici</h1>
-    <div><form>
-        <label>Nome:</label><br>
-        <input type="text" id="nomeUtente" placeholder="Nome..."><br>
-        <label>Cognome:</label><br>
-        <input type="text" id="cognomeUtente" placeholder="Cognome..."><br>
-        <label>Codice fiscale:</label><br>
-        <input type="text" id="codiceFiscaleUtente" placeholder="Codice fiscale..."
-        pattern="[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]"><br>
-        <label>Data di Nascita:</label><br>
-        <input type="text" id="dataNascitaUtente" placeholder="Giorno-Mese-Anno..."
-        pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"><br>
-        <label>Indirizzo:</label><br>
-        <input type="text" id="indirizzoUtente" placeholder="Indirizzo..."><br>
-        <label>Email:</label><br>
-        <input type="text" id="emailUtente" placeholder="Email..."><br>
-        <label>Numero di telefono:</label><br>
-        <input type="text" id="telefonoUtente" placeholder="Telefono..."
-        pattern="[0-9]{10}"><br>
-        <label>Occupazione:</label><br>
-        <input type="text" id="occupazioneUtente" placeholder="Occupazione..."
-        pattern="[a-zA-Z"><br><br>
-        <input type="button" id="submit" value="Submit">
-      </form> 
-    </div>
+
+    <table class="tabellaDati">
+        <thead>
+            <th colspan="2"> Campilare i campi sottostanti: </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nome</td>
+                <td><input type="text" id="nomeUtente" placeholder="Nome..."></td>
+            </tr>
+            <tr>
+                <td>Cognome</td>
+                <td><input type="text" id="cognomeUtente" placeholder="Cognome..."></td>
+            </tr>
+            <tr>
+                <td>Codice fiscale</td>
+                <td><input type="text" id="codiceFiscaleUtente" placeholder="Codice fiscale..."></td>
+            </tr>
+            <tr>
+                <td>Data di nascita</td>
+                <td><input type="text" id="dataNascitaUtente" placeholder="Giorno-Mese-Anno..."></td>
+            </tr>
+            <tr>
+                <td>Indirizzo</td>
+                <td><input type="text" id="indirizzoUtente" placeholder="Indirizzo..."></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="emailUtente" placeholder="Email..."></td>
+            </tr>
+            <tr>
+                <td>Telefono</td>
+                <td><input type="text" id="telefonoUtente" placeholder="Telefono..."></td>
+            </tr>
+            <tr>
+                <td>Occupazione</td>
+                <td><input type="text" id="occupazioneUtente" placeholder="Occupazione..."></td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2"> <input type="button" class ="submit" id="submit" value="Submit"></td>
+            </tr>
+        </tfoot>
+
+        </tbody>
+    </table>
+
 
     <div>
-        <h2>Dati utente:</h2>
+        <input type="button" class="visualizzaDati" id="visualizzaDati" value="Visualizza Dati Utente">
         <p id="nome"></p>
         <p id="cognome"></p>
         <p id="codiceFiscale"></p>
@@ -47,4 +72,5 @@
 
     <script type="module" src="./script.js"></script>
 </body>
+
 </html>
