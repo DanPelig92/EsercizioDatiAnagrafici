@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+table {
+    width:100%; 
+    border-collapse:collapse; 
+    table-layout:auto; 
+    vertical-align:top; 
+    margin-bottom:15px; 
+    border: 2px solid black;
+}
+
+table thead th {
+    color:#000000; 
+    background-color:#b9b4b4d0; 
+    border:px solid #070000; 
+    text-align:left; 
+}
+
+table tfoot {
+    color:#FFFFFF; 
+    background-color:#666666; 
+    border:1px solid #CCCCCC; 
+    border-collapse:collapse; 
+    text-align:center; 
+    table-layout:auto; 
+    vertical-align:middle;
+}
+
+table tbody td {
+    vertical-align:middle; 
+    border-collapse:collapse; 
+    border-left:1px solid #CCCCCC; 
+    border-right:1px solid #CCCCCC;
+}
+
+table thead th, table tbody td {
+    padding:5px; 
+    border-collapse:collapse;
+}
+
+table tbody tr:nth-child(odd){color:#0c0707; background-color:#F7F7F7;}
+table tbody tr:nth-child(even){color:#0c0707; background-color:#E8E8E8;}
+
+.tabellaDati {
+    width:600px;
+}
+
+.tabellaDati th {
+    width:1000px;
+}
+
+.tabellaDati th:nth-child(2) {
+    width: 100px;
+}
+
+.tabellaDati input[type="text"] {
+    width:380px;
+}
+
+.submit {
+    width: 80%;
+}
+
+.visualizzaDati {
+
+}
+
+::-webkit-input-placeholder{color: #B0B0B0;}
+::-moz-placeholder{color: #B0B0B0;}
+:-ms-input-placeholder{color: #B0B0B0;}
+:-moz-placeholder{color: #B0B0B0;}
